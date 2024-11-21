@@ -84,8 +84,7 @@ fun MahasiswaFormView(
                 )
                 Text(
                     text = "Unggul dan Islami",
-                    color = Color.Red,
-                    fontWeight = FontWeight.Light
+                    color = Color.Red
                 )
             }
         }
@@ -109,7 +108,7 @@ fun MahasiswaFormView(
             ) {
                 Text(
                     text = "Isi sesuai data yang kamu daftarkan",
-                    fontWeight = FontWeight.Light
+                    fontWeight = FontWeight.Bold
                 )
                 Spacer(modifier = Modifier.padding(8.dp))
                 OutlinedTextField(

@@ -62,6 +62,7 @@ fun RencanaStudyView(
                 )
             )
     ) {
+        Spacer(modifier = Modifier.padding(top = 10.dp))
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -83,13 +84,13 @@ fun RencanaStudyView(
             ) {
                 Text(
                     text = mahasiswa.nama,
-                    fontWeight = FontWeight.Light,
+                    fontWeight = FontWeight.Bold,
                     fontSize = 12.sp,
                     color = Color.White
                 )
                 Text(
                     text = mahasiswa.nim,
-                    fontWeight = FontWeight.Light,
+                    fontWeight = FontWeight.Bold,
                     fontSize = 12.sp,
                     color = Color.White
                 )
@@ -123,8 +124,7 @@ fun RencanaStudyView(
                 Text(text = "Pilih Mata Kuliah Peminatan", fontWeight = FontWeight.Bold,)
                 Text(
                     text = "Silahkan pilih mata kuliah yang anda inginkan",
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Light
+                    fontSize = 12.sp
                 )
                 Spacer(modifier = Modifier.padding(8.dp))
                 DynamicSelectedTextField(
@@ -142,8 +142,7 @@ fun RencanaStudyView(
                 )
                 Text(
                     text = "Silahkan pilih kelas dari mata kuliah yang anda inginkan",
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Light
+                    fontSize = 12.sp
                 )
                 Spacer(modifier = Modifier.padding(8.dp))
                 Row(
@@ -178,7 +177,7 @@ fun RencanaStudyView(
                     )
                     Text(
                         text = "Saya menyetujui setiap pernyataan yang ada tanpa ada paksaan dari pihak manapun.",
-                        fontWeight = FontWeight.Light, fontSize = 10.sp
+                        fontSize = 12.sp
                     )
                 }
                 Spacer(modifier = Modifier.padding(8.dp))
