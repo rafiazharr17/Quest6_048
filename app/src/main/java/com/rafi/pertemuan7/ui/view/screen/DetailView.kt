@@ -2,8 +2,10 @@ package com.rafi.pertemuan7.ui.view.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -26,6 +28,35 @@ fun DetailView(
         Pair("Mata Kuliah", dataKRS.mataKuliah),
         Pair("Kelas", dataKRS.kelas)
     )
+
+    Column(
+        modifier = Modifier
+            .padding(16.dp)
+            .fillMaxSize()
+    ) {
+        listDataMHS.forEach { data ->
+            DetailMHS(
+                judul = data.first,
+                isinya = data.second
+            )
+        }
+
+        listDataKRS.forEach { data ->
+            DetailMHS(
+                judul = data.first,
+                isinya = data.second
+            )
+        }
+
+        Button(
+            modifier = Modifier.fillMaxWidth(),
+            onClick = {
+                onBackButtonClicked()
+            }
+        ) {
+            Text(text = "Kembali")
+        }
+    }
 }
 
 @Composable
