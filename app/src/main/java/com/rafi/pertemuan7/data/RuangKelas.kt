@@ -1,6 +1,11 @@
 package com.rafi.pertemuan7.data
 
-import com.rafi.pertemuan7.R
 
 object RuangKelas {
+    val kelas = listOf(
+        "A",
+        "B",
+        "C",
+        "D"
+    )
 }
