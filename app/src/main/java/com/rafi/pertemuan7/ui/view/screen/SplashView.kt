@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import com.rafi.pertemuan7.R
 
 @Composable
-fun SplahView(
+fun SplashView(
     onMulaiButton: () -> Unit
 ){
     Column(
